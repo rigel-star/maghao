@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Favorites"
+        android:icon="@drawable/ic_favoritep"
+        android:id="@+id/cart_nav_bar_drafts"
+        />
+
+    <item android:title="Ordered"
+        android:icon="@raw/nav_bar_ordered"
+        android:id="@+id/cart_nav_bar_ordered"
+        />
+
+    <item android:title="Requests"
+        android:icon="@raw/nav_bar_requests"
+        android:id="@+id/cart_nav_bar_requests"
+        />
+
+</menu>

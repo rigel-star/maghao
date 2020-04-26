@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/home"
+        android:icon="@raw/icon_menu"
+        android:id="@+id/home_nav_bar"/>
+
+    <item android:title="@string/map"
+        android:icon="@drawable/ic_near_me"
+        android:id="@+id/map_nav_bar"/>
+
+    <item android:title="@string/notifications"
+        android:icon="@raw/icon_notif"
+        android:id="@+id/notif_nav_bar"/>
+
+<!--    <item android:title="@string/favourites"-->
+<!--        android:icon="@drawable/ic_favoritep"-->
+<!--        android:id="@+id/favourites_nav_bar"/>-->
+
+    <item android:title="@string/settings"
+        android:icon="@raw/icon_settings"
+        android:id="@+id/settings_nav_bar"/>
+
+</menu>

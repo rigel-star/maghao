@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <ScrollView
+        android:layout_above="@id/save_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:padding="20dp"
+                android:background="@drawable/round_bttn_bg"
+                android:id="@+id/upload_profile_buutton"
+                android:src="@raw/camera_upload"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:text="Upload Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:backgroundTint="@color/appColor"
+                android:id="@+id/full_name_field"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Full Valid Name"/>
+
+            <EditText
+                android:backgroundTint="@color/appColor"
+                android:id="@+id/mobile_number_field"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Valid Mobile Number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+
+            <EditText
+                android:backgroundTint="@color/appColor"
+                android:id="@+id/email_field"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Valid Email Address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <RadioGroup
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:textSize="18sp"
+                    android:id="@+id/male_radio_button"
+                    android:text="Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:textSize="18sp"
+                    android:id="@+id/female_radio_button"
+                    android:text="Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textAlignment="center"
+                android:text="Please enter valid mobile number, we need to send you code to verify your account."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/round_font_second"
+        android:id="@+id/save_profile_button"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/appColor"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="Save"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

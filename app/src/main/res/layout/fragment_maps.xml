@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".fragment_classes.MapsFragment">
+
+
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/round_font_second"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Explore map to see how your orders look to store keepers nearby you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@raw/maps_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+
+    <Button
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:fontFamily="@font/round_font_second"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttons_background_app_color"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore Map"
+        android:id="@+id/explore_map_button"/>
+
+    <Button
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/round_font_second"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#FF7E00"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Visit My Cart"
+        android:id="@+id/explore_cart_button"/>
+
+
+
+</LinearLayout>

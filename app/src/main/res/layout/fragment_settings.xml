@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment_classes.SettingsFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:transitionName="imageTrans"
+        android:id="@+id/user_profile_on_settings"
+        android:src="@raw/icon_hire"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FF7E00"
+        />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20sp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="@font/round_font_second"
+                android:transitionName="nameTrans"
+                android:id="@+id/user_name_on_settings"
+                android:textSize="20sp"
+                android:text="@string/loading_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:id="@+id/user_contact_on_settings"
+                android:textSize="16sp"
+                android:text="@string/loading_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/settings_recycler_view"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

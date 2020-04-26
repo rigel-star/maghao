@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp">
+
+
+    <RelativeLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <ImageView
+            android:id="@+id/del_ordered_product"
+            android:layout_marginEnd="10sp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/drafts_ordered_image_view"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_favoritep"
+                android:layout_width="45dp"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/drafts_ordered_text_view"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/drafts_ordered_quantity_view"
+                    android:layout_marginStart="15dp"
+                    android:text="Quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/drafts_ordered_price_view"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/p_state"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/icon_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/inc_dec_linear_layout"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/decrease_product_quantity_button"
+                android:background="@drawable/ui_black_border"
+                android:text="-"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/decrease_increase_quantity_text_view"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/increase_product_quantity_button"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/ui_black_border"
+                android:text="+"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

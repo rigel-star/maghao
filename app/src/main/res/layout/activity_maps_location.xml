@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MapsLocationActivity">
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+
+    <!--  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/second_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+<!--            <EditText-->
+<!--                android:background="@drawable/search_bar_bg_white"-->
+<!--                android:id="@+id/maps_search_bar"-->
+<!--                android:elevation="10dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Search places for deals"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:imeOptions="actionSearch"/>-->
+
+            <TextView
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hold and drag icons to change location."/>
+
+
+            <ImageView
+                android:padding="6dp"
+                android:background="@drawable/search_bar_bg_white"
+                android:id="@+id/go_to_home_button"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/maps_search_bar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@raw/icon_map_menu"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:background="@drawable/search_bar_bg_white"
+        android:src="@raw/icon_my_cart"
+        android:id="@+id/publish_products_to_map_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="6dp"
+        android:maxHeight="22dp"
+        android:maxWidth="22dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+
+    <ImageView
+        android:background="@drawable/search_bar_bg_white"
+        android:padding="3dp"
+        android:src="@drawable/ic_my_location"
+        android:id="@+id/my_location_button"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        />
+
+
+</RelativeLayout>

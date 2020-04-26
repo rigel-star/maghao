@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1047949229502",
+    "firebase_url": "https://maghao-service.firebaseio.com",
+    "project_id": "maghao-service",
+    "storage_bucket": "maghao-service.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047949229502:android:0277c4484cfce05904cdef",
+        "android_client_info": {
+          "package_name": "com.service.maghao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047949229502-gltqrb130hqtu2tn4gfurigk33k9k80s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.service.maghao",
+            "certificate_hash": "8d9d2614c16c8d7168e244fc9d19fe7d7cf6bf6f"
+          }
+        },
+        {
+          "client_id": "1047949229502-sgnbrqes7nfp1i4cv89bs914fq97646h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyuWzP9o8rlHqZf2j2C6MCkyvY3ODvjtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047949229502-sgnbrqes7nfp1i4cv89bs914fq97646h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

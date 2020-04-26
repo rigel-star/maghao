@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".my_cart.FavoritesCartFragment">
+
+        <LinearLayout
+            android:layout_above="@id/buttons"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/category_draft"
+                android:fontFamily="@font/round_font_second"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Favorites"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/list_empty_msg_draft"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@raw/emptycart"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:fontFamily="@font/round_font_second"
+                    android:layout_gravity="center"
+                    android:text="Draft list is empty!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_margin="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/drafts_recycler_view"
+               android:layoutAnimation="@anim/layout_animation"
+               app:layout_behavior="@string/appbar_scrolling_view_behavior"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/draft_cart_buy_more_btn"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttons_background_app_color"
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Buy more"
+                    />
+
+                <Button
+                    android:id="@+id/draft_cart_order_all_btn"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/buttons_background_app_color"
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Order all"
+                    />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

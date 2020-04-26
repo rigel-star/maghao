@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BlackTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">#FF7E00</item>
+        <item name="colorPrimaryDark">#00ffffff</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">#FF7E00</item>
+
+        <!-- animation -->
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <!-- show slide dialog animation when user touches the card-->
+    <style name="DialogSlide">
+
+        <item name="android:windowEnterAnimation">@anim/dialog_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fade_out</item>
+
+    </style>
+
+</resources>
