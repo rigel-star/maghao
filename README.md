@@ -10,21 +10,21 @@ android grocery shopping app with a lots of bugs you to fix.
 
 ### Screenshots
 
-####Home
+#### Home
 ![p1](app/src/main/res/scrnshots/p0.png)
 
-####My Cart Favs
+#### My Cart Favs
 ![p4](app/src/main/res/scrnshots/p4.png)
 
-####My Cart Orders
+#### My Cart Orders
 ![p5](app/src/main/res/scrnshots/p5.png)
 
-####Add to Cart
+#### Add to Cart
 ![p3](app/src/main/res/scrnshots/p3.png)
 
-####Maps
+#### Maps
 ![p6](app/src/main/res/scrnshots/p6.png)
 ![p7](app/src/main/res/scrnshots/p7.png)
 
-####Settings
+#### Settings
 ![p1](app/src/main/res/scrnshots/p2.png)
