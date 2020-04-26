@@ -27,4 +27,4 @@ android grocery shopping app with a lots of bugs you to fix.
 ![p7](app/src/main/res/scrnshots/p7.png)
 
 # Settings
-![p2](app/src/main/res/scrnshots/p2.png)
+![p2](app/src/main/res/scrnshots/p1.png)
